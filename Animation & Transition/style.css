@@ -1,0 +1,51 @@
+body {
+    background: gray;
+}
+a {
+    color: aquamarine;
+    transition: color 1s;
+}
+a:hover {
+    color:rgb(250, 203, 48);
+}
+button {
+    background-color: bisque;
+    border:dashed 3px brown;
+    transition: transform 0.5s ease;    
+}
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+button:focus {
+    animation: button-click 0.5s ease-in-out;
+}
+button:focus:active {
+    animation: none;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    animation: spin 10s ease-in-out infinite;
+    display: flex;
+    
+}
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+img:hover {
+    transform: scale(1.5) 0.5s ease-in-out;
+}

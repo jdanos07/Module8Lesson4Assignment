@@ -1,0 +1,36 @@
+body {
+    background-color: gold;
+    position: relative;
+}
+.background-fade {
+    background-color: rgba(59, 153, 230, 0.644);
+    color: rgb(82, 48, 4);
+    text-align: center;
+    font-size: x-large;
+    top: 0;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    
+}
+img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-self:last baseline;
+    top: 0;
+    z-index: -1
+    ;
+}
+h1 {
+    text-align: center;
+    text-shadow: 4px 5px 10px rgba(0, 0, 0, 0.6);
+}
+button {
+    background-color: aqua
+}
+button:hover {
+    background: radial-gradient(ellipse, aqua, rgba(223, 107, 126, 0.76));
+}
